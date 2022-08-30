@@ -1,0 +1,13 @@
+div {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

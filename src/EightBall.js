@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './EightBall.css';
 
 /** Generate random number between 0 and max. */
 function getRandom(max) {
@@ -21,21 +22,14 @@ function EightBall({ answers }) {
     });
 
     function handleClick() {
+        //break out into variables
         setResult(answers[getRandom(answers.length)]);
     }
 
     console.log(result)
 
     return (
-        <div style={{width:'300px', 
-                    height: '300px', 
-                    borderRadius:'50%', 
-                    textAlign: 'center',
-                    lineHeight: '300px',
-                    color: 'white',
-                    fontWeight: 'bold',
-                    fontSize: '24px',
-                    backgroundColor:result.color}}
+        <div style={{backgroundColor:result.color}}
             onClick={handleClick}>
             {result.msg}
         </div>
